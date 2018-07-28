@@ -14,6 +14,14 @@
 		311E6D9F210D19C200AF7F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311E6D9D210D19C200AF7F11 /* LaunchScreen.storyboard */; };
 		311E6DAA210D19C200AF7F11 /* Water_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E6DA9210D19C200AF7F11 /* Water_TrackerTests.swift */; };
 		311E6DB5210D19C200AF7F11 /* Water_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E6DB4210D19C200AF7F11 /* Water_TrackerUITests.swift */; };
+		311E6DC8210D1D4600AF7F11 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311E6DC6210D1D4600AF7F11 /* Interface.storyboard */; };
+		311E6DCA210D1D4600AF7F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311E6DC9210D1D4600AF7F11 /* Assets.xcassets */; };
+		311E6DD1210D1D4600AF7F11 /* Water Tracker Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 311E6DD0210D1D4600AF7F11 /* Water Tracker Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		311E6DD6210D1D4600AF7F11 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E6DD5210D1D4600AF7F11 /* InterfaceController.swift */; };
+		311E6DD8210D1D4600AF7F11 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E6DD7210D1D4600AF7F11 /* ExtensionDelegate.swift */; };
+		311E6DDA210D1D4600AF7F11 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E6DD9210D1D4600AF7F11 /* NotificationController.swift */; };
+		311E6DDC210D1D4600AF7F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311E6DDB210D1D4600AF7F11 /* Assets.xcassets */; };
+		311E6DE1210D1D4600AF7F11 /* Water Tracker Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 311E6DC4210D1D4600AF7F11 /* Water Tracker Watch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +39,46 @@
 			remoteGlobalIDString = 311E6D90210D19C100AF7F11;
 			remoteInfo = "Water Tracker";
 		};
+		311E6DD2210D1D4600AF7F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311E6D89210D19C100AF7F11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311E6DCF210D1D4600AF7F11;
+			remoteInfo = "Water Tracker Watch Extension";
+		};
+		311E6DDF210D1D4600AF7F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 311E6D89210D19C100AF7F11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311E6DC3210D1D4600AF7F11;
+			remoteInfo = "Water Tracker Watch";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		311E6DE5210D1D4600AF7F11 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				311E6DD1210D1D4600AF7F11 /* Water Tracker Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311E6DE9210D1D4600AF7F11 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				311E6DE1210D1D4600AF7F11 /* Water Tracker Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		311E6D91210D19C200AF7F11 /* Water Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Water Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +94,17 @@
 		311E6DB0210D19C200AF7F11 /* Water TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Water TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		311E6DB4210D19C200AF7F11 /* Water_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water_TrackerUITests.swift; sourceTree = "<group>"; };
 		311E6DB6210D19C200AF7F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311E6DC4210D1D4600AF7F11 /* Water Tracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Water Tracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		311E6DC7210D1D4600AF7F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		311E6DC9210D1D4600AF7F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		311E6DCB210D1D4600AF7F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311E6DD0210D1D4600AF7F11 /* Water Tracker Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Water Tracker Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		311E6DD5210D1D4600AF7F11 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		311E6DD7210D1D4600AF7F11 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		311E6DD9210D1D4600AF7F11 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		311E6DDB210D1D4600AF7F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		311E6DDD210D1D4600AF7F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311E6DDE210D1D4600AF7F11 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		311E6DCD210D1D4600AF7F11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +145,8 @@
 				311E6D93210D19C200AF7F11 /* Water Tracker */,
 				311E6DA8210D19C200AF7F11 /* Water TrackerTests */,
 				311E6DB3210D19C200AF7F11 /* Water TrackerUITests */,
+				311E6DC5210D1D4600AF7F11 /* Water Tracker Watch */,
+				311E6DD4210D1D4600AF7F11 /* Water Tracker Watch Extension */,
 				311E6D92210D19C200AF7F11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +157,8 @@
 				311E6D91210D19C200AF7F11 /* Water Tracker.app */,
 				311E6DA5210D19C200AF7F11 /* Water TrackerTests.xctest */,
 				311E6DB0210D19C200AF7F11 /* Water TrackerUITests.xctest */,
+				311E6DC4210D1D4600AF7F11 /* Water Tracker Watch.app */,
+				311E6DD0210D1D4600AF7F11 /* Water Tracker Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +194,29 @@
 			path = "Water TrackerUITests";
 			sourceTree = "<group>";
 		};
+		311E6DC5210D1D4600AF7F11 /* Water Tracker Watch */ = {
+			isa = PBXGroup;
+			children = (
+				311E6DC6210D1D4600AF7F11 /* Interface.storyboard */,
+				311E6DC9210D1D4600AF7F11 /* Assets.xcassets */,
+				311E6DCB210D1D4600AF7F11 /* Info.plist */,
+			);
+			path = "Water Tracker Watch";
+			sourceTree = "<group>";
+		};
+		311E6DD4210D1D4600AF7F11 /* Water Tracker Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				311E6DD5210D1D4600AF7F11 /* InterfaceController.swift */,
+				311E6DD7210D1D4600AF7F11 /* ExtensionDelegate.swift */,
+				311E6DD9210D1D4600AF7F11 /* NotificationController.swift */,
+				311E6DDB210D1D4600AF7F11 /* Assets.xcassets */,
+				311E6DDD210D1D4600AF7F11 /* Info.plist */,
+				311E6DDE210D1D4600AF7F11 /* PushNotificationPayload.apns */,
+			);
+			path = "Water Tracker Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +227,12 @@
 				311E6D8D210D19C100AF7F11 /* Sources */,
 				311E6D8E210D19C100AF7F11 /* Frameworks */,
 				311E6D8F210D19C100AF7F11 /* Resources */,
+				311E6DE9210D1D4600AF7F11 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				311E6DE0210D1D4600AF7F11 /* PBXTargetDependency */,
 			);
 			name = "Water Tracker";
 			productName = "Water Tracker";
@@ -181,6 +275,40 @@
 			productReference = 311E6DB0210D19C200AF7F11 /* Water TrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		311E6DC3210D1D4600AF7F11 /* Water Tracker Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311E6DE6210D1D4600AF7F11 /* Build configuration list for PBXNativeTarget "Water Tracker Watch" */;
+			buildPhases = (
+				311E6DC2210D1D4600AF7F11 /* Resources */,
+				311E6DE5210D1D4600AF7F11 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311E6DD3210D1D4600AF7F11 /* PBXTargetDependency */,
+			);
+			name = "Water Tracker Watch";
+			productName = "Water Tracker Watch";
+			productReference = 311E6DC4210D1D4600AF7F11 /* Water Tracker Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		311E6DCF210D1D4600AF7F11 /* Water Tracker Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311E6DE2210D1D4600AF7F11 /* Build configuration list for PBXNativeTarget "Water Tracker Watch Extension" */;
+			buildPhases = (
+				311E6DCC210D1D4600AF7F11 /* Sources */,
+				311E6DCD210D1D4600AF7F11 /* Frameworks */,
+				311E6DCE210D1D4600AF7F11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Water Tracker Watch Extension";
+			productName = "Water Tracker Watch Extension";
+			productReference = 311E6DD0210D1D4600AF7F11 /* Water Tracker Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +333,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 311E6D90210D19C100AF7F11;
 					};
+					311E6DC3210D1D4600AF7F11 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					311E6DCF210D1D4600AF7F11 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 311E6D8C210D19C100AF7F11 /* Build configuration list for PBXProject "Water Tracker" */;
@@ -223,6 +359,8 @@
 				311E6D90210D19C100AF7F11 /* Water Tracker */,
 				311E6DA4210D19C200AF7F11 /* Water TrackerTests */,
 				311E6DAF210D19C200AF7F11 /* Water TrackerUITests */,
+				311E6DC3210D1D4600AF7F11 /* Water Tracker Watch */,
+				311E6DCF210D1D4600AF7F11 /* Water Tracker Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +387,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311E6DC2210D1D4600AF7F11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311E6DCA210D1D4600AF7F11 /* Assets.xcassets in Resources */,
+				311E6DC8210D1D4600AF7F11 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311E6DCE210D1D4600AF7F11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311E6DDC210D1D4600AF7F11 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +435,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		311E6DCC210D1D4600AF7F11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311E6DDA210D1D4600AF7F11 /* NotificationController.swift in Sources */,
+				311E6DD8210D1D4600AF7F11 /* ExtensionDelegate.swift in Sources */,
+				311E6DD6210D1D4600AF7F11 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +457,16 @@
 			isa = PBXTargetDependency;
 			target = 311E6D90210D19C100AF7F11 /* Water Tracker */;
 			targetProxy = 311E6DB1210D19C200AF7F11 /* PBXContainerItemProxy */;
+		};
+		311E6DD3210D1D4600AF7F11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311E6DCF210D1D4600AF7F11 /* Water Tracker Watch Extension */;
+			targetProxy = 311E6DD2210D1D4600AF7F11 /* PBXContainerItemProxy */;
+		};
+		311E6DE0210D1D4600AF7F11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311E6DC3210D1D4600AF7F11 /* Water Tracker Watch */;
+			targetProxy = 311E6DDF210D1D4600AF7F11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +485,14 @@
 				311E6D9E210D19C200AF7F11 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		311E6DC6210D1D4600AF7F11 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311E6DC7210D1D4600AF7F11 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -518,6 +701,80 @@
 			};
 			name = Release;
 		};
+		311E6DE3210D1D4600AF7F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KKFT9P6YJ;
+				INFOPLIST_FILE = "Water Tracker Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ElisaKazan.Water-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		311E6DE4210D1D4600AF7F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KKFT9P6YJ;
+				INFOPLIST_FILE = "Water Tracker Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ElisaKazan.Water-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		311E6DE7210D1D4600AF7F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KKFT9P6YJ;
+				IBSC_MODULE = Water_Tracker_Watch_Extension;
+				INFOPLIST_FILE = "Water Tracker Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ElisaKazan.Water-Tracker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		311E6DE8210D1D4600AF7F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KKFT9P6YJ;
+				IBSC_MODULE = Water_Tracker_Watch_Extension;
+				INFOPLIST_FILE = "Water Tracker Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ElisaKazan.Water-Tracker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +810,24 @@
 			buildConfigurations = (
 				311E6DC0210D19C200AF7F11 /* Debug */,
 				311E6DC1210D19C200AF7F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311E6DE2210D1D4600AF7F11 /* Build configuration list for PBXNativeTarget "Water Tracker Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311E6DE3210D1D4600AF7F11 /* Debug */,
+				311E6DE4210D1D4600AF7F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311E6DE6210D1D4600AF7F11 /* Build configuration list for PBXNativeTarget "Water Tracker Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311E6DE7210D1D4600AF7F11 /* Debug */,
+				311E6DE8210D1D4600AF7F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
